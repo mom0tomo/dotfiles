@@ -231,4 +231,5 @@ alias df='df -h'
 export PATH="/usr/local/bin:/usr/local/sbin:$PATH"
 
 # デフォルトgitとbrewのgit
-export PATH="/usr/local/Cellar/git/2.5.0/bin:$PATH"
+export GOPATH=/Users/mo-watanabe/Develop/go
+export PATH=$PATH:$GOPATH/bin
