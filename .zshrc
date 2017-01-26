@@ -204,6 +204,7 @@ setopt magic_equal_subst
 alias vi='vim'
 alias la='ls -la'
 alias ll='ls -la'
+
 # 再起動 relogin
 alias relogin='exec $SHELL -l'
 
@@ -230,6 +231,6 @@ alias df='df -h'
 # binをsbinに
 export PATH="/usr/local/bin:/usr/local/sbin:$PATH"
 
-# デフォルトgitとbrewのgit
+# gopath
 export GOPATH=/Users/mo-watanabe/Develop/go
 export PATH=$PATH:$GOPATH/bin
