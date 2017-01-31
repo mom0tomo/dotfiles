@@ -5,6 +5,7 @@ export EDITOR=vim
 
 # 文字コードを設定する
 export LANG=ja_JP.UTF-8
+
 # 日本語ファイル名を表示可能にする
 setopt print_eight_bit
 
