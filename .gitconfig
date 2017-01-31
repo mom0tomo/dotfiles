@@ -1,0 +1,16 @@
+[core]
+	excludesfile = /Users/mo-watanabe/.gitignore_global
+	editor = vim
+[user]
+	name = mo-watanabe
+	email = mo-watanabe@dip-net.co.jp
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
+[commit]
+	template = /Users/mo-watanabe/.stCommitMsg
+[alias]
+	co = checkout
