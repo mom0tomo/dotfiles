@@ -235,3 +235,6 @@ export PATH="/usr/local/bin:/usr/local/sbin:$PATH"
 # gopath
 export GOPATH=/Users/mo-watanabe/Develop/go
 export PATH=$PATH:$GOPATH/bin
+
+# nodebrew
+export PATH=$HOME/.nodebrew/current/bin:$PATH
