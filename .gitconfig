@@ -29,3 +29,4 @@
 
 [alias]
 	co = checkout
+	p = !git push origin `git rev-parse --abbrev-ref HEAD`
