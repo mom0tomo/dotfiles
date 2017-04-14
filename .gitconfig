@@ -3,6 +3,7 @@
 	excludesfile = /Users/mo-watanabe/.gitignore_global
 	precomposeunicode = true
 	quotepath = false
+	pager = less -x2
 
 [user]
 	name = momo
