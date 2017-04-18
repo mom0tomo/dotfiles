@@ -78,10 +78,8 @@ zstyle ':completion:*:sudo:*' command-path /usr/local/sbin /usr/local/bin \
                    /usr/sbin /usr/bin /sbin /bin /usr/X11R6/bin
 
 ########################################
-# プロンプト
-# 1行表示
-# PROMPT='%~ %# '
-# 2行表示
+# プロンプト設定
+# 2行表示にする
 #PROMPT='%{${fg[red]}%}[%n@%m]%{${reset_color}%} %~ %# '
 
 # プロンプトに色を付ける
@@ -96,7 +94,7 @@ PROMPT='
 %(?.$.%F{red}$%f) '
 
 ########################################
-# git
+# git設定
 # vcs_info を使う
 autoload -Uz vcs_info
 # vcs_info を呼び出す
@@ -133,7 +131,7 @@ function vcs_echo {
 }
 
 ########################################
-# キーバインド
+# キーバインド設定
 # コマンドラインの編集モードをViにする
 bindkey -v
 
@@ -144,7 +142,7 @@ bindkey -v '^?' backward-delete-char
 # bindkey '^[[Z' reverse-menu-complete
 
 ########################################
-# ヒストリ
+# ヒストリ設定
 # コマンドのオプションや引数を補完する
 autoload -Uz compinit && compinit -u
 
@@ -200,7 +198,7 @@ export SAVEHIST=1000000
 setopt magic_equal_subst
 
 ########################################
-# エイリアス
+# エイリアス設定
 # よく使うコマンド
 alias vi='vim'
 alias la='ls -la'
@@ -228,7 +226,7 @@ alias du='du -h'
 alias df='df -h'
 
 #######################################
-# パス
+# パス設定
 # binをsbinに
 export PATH="/usr/local/bin:/usr/local/sbin:$PATH"
 
