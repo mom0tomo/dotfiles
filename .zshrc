@@ -226,6 +226,13 @@ alias du='du -h'
 alias df='df -h'
 
 #######################################
+#エディタ設定
+# IDEをターミナルから開く
+idea () {
+  /Applications/IntelliJ\ IDEA.app/Contents/MacOS/idea $(cd "${1}" && /bin/pwd)
+}
+
+#######################################
 # パス設定
 # binをsbinに
 export PATH="/usr/local/bin:/usr/local/sbin:$PATH"
