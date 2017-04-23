@@ -232,6 +232,11 @@ idea () {
   /Applications/IntelliJ\ IDEA.app/Contents/MacOS/idea $(cd "${1}" && /bin/pwd)
 }
 
+# Goglandをターミナルから開く
+ggld () {
+  /Applications/Gogland\ 1.0\ EAP.app/Contents/MacOS/gogland $(cd "${1}" && /bin/pwd)
+}
+
 #######################################
 # パス設定
 # binをsbinに
