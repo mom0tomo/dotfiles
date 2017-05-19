@@ -242,8 +242,8 @@ ggld () {
 # gvm
 [[ -s "/Users/mo-watanabe/.gvm/scripts/gvm" ]] && source "/Users/mo-watanabe/.gvm/scripts/gvm"
 
-# nodebrew
-export PATH=$HOME/.nodebrew/current/bin:$PATH
+## fzf
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 # gvm
 [[ -s "/Users/mo-watanabe/.gvm/scripts/gvm" ]] && source "/Users/mo-watanabe/.gvm/scripts/gvm"
