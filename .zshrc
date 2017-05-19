@@ -245,5 +245,54 @@ ggld () {
 ## fzf
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
-# gvm
-[[ -s "/Users/mo-watanabe/.gvm/scripts/gvm" ]] && source "/Users/mo-watanabe/.gvm/scripts/gvm"
+#######################################
+# zplug設定
+source ~/.zplug/init.zsh
+zplug "zsh-users/zsh-history-substring-search"
+zplug "Jxck/dotfiles", as:command, use:"bin/{histuniq,color}"
+zplug "tcnksm/docker-alias", use:zshrc
+zplug "k4rthik/git-cal", as:command, frozen:1
+zplug "junegunn/fzf-bin", \
+    from:gh-r, \
+    as:command, \
+    rename-to:fzf, \
+    use:"*darwin*amd64*"
+zplug "plugins/git",   from:oh-my-zsh
+zplug "lib/clipboard", from:oh-my-zsh, if:"[[ $OSTYPE == *darwin* ]]"
+zstyle ':prezto:module:prompt' theme 'sorin'
+zplug "jhawthorn/fzy", \
+    as:command, \
+    rename-to:fzy, \
+    hook-build:"
+    {
+        make
+        sudo make install
+    } &>/dev/null
+    "
+zplug "b4b4r07/enhancd", at:v1
+zplug "mollifier/anyframe", at:4c23cb60
+zplug "b4b4r07/79ee61f7c140c63d2786", \
+    from:gist, \
+    as:command, \
+    use:get_last_pane_path.sh
+zplug "b4b4r07/hello_bitbucket", \
+    from:bitbucket, \
+    as:command, \
+    hook-build:"chmod 755 *.sh", \
+    use:"*.sh"
+zplug "stedolan/jq", \
+    from:gh-r, \
+    as:command, \
+    rename-to:jq
+zplug "b4b4r07/emoji-cli", \
+    on:"stedolan/jq"
+zplug "zsh-users/zsh-syntax-highlighting", nice:10
+zplug "~/.zsh", from:local
+zplug 'dracula/zsh', as:theme
+if ! zplug check --verbose; then
+    printf "Install? [y/N]: "
+    if read -q; then
+        echo; zplug install
+    fi
+fi
+zplug load --verbose
