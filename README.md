@@ -3,7 +3,9 @@
 ## how to set up
 
 ```
-$ git clone https://github.com/mom0tomo/dotfiles.git ~/dotfiles
+$ git clone https://github.com/mom0tomo/dotfiles
+
+$ cd dotfiles
 
 $ sh ~/dotfiles/setup.sh
 ```
