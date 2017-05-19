@@ -2,6 +2,8 @@
 
 ## how to set up
 
-git clone https://github.com/mom0tomo/dotfiles.git ~/dotfiles
+```
+$ git clone https://github.com/mom0tomo/dotfiles.git ~/dotfiles
 
-sh ~/dotfiles/setup.sh
+$ sh ~/dotfiles/setup.sh
+```
