@@ -6,6 +6,9 @@ export LC_CTYPE=en_US.UTF-8
 # binをsbinに
 export PATH="/usr/local/bin:/usr/local/sbin:$PATH"
 
+# git
+export PATH="/usr/local/bin/git:$PATH"
+
 # less
 export LESS='-R -f -X -i -P ?f%f:(stdin). ?lb%lb?L/%L.. [?eEOF:?pb%pb\%..]'
 export LESSCHARSET=UTF-8
