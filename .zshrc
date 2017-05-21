@@ -1,10 +1,46 @@
 ########################################
-# 基本設定
+# language
+export LANG=ja_JP.UTF-8
+export LC_ALL=en_US.UTF-8
+export LC_CTYPE=en_US.UTF-8
+
+# binをsbinに
+ export PATH=/usr/local/bin:/usr/local/sbin:$PATH
+
+# git
+export PATH=/usr/local/bin/git:$PATH
+
+# less
+export LESS='-R -f -X -i -P ?f%f:(stdin). ?lb%lb?L/%L.. [?eEOF:?pb%pb\%..]'
+export LESSCHARSET=UTF-8
+export LESS_TERMCAP_mb=$'\E[01;31m'
+export LESS_TERMCAP_md=$'\E[01;31m'
+export LESS_TERMCAP_me=$'\E[0m'
+export LESS_TERMCAP_se=$'\E[0m'
+export LESS_TERMCAP_so=$'\E[00;44;37m'
+export LESS_TERMCAP_ue=$'\E[0m'
+export LESS_TERMCAP_us=$'\E[01;32m'
+
+# ls
+export CLICOLOR=true
+export LSCOLORS=gxgxcxdxbxegedabagacad
+
+# Mac OS
+export LS_COLORS='di=36:ln=36:so=32:pi=33:ex=31:bd=34;46:cd=34;43:su=30;41:sg=30;46:tw=30;42:ow=30;43'
+
+# Linux
+zstyle ':completion:*' list-colors di=34 ln=35 ex=31
+zstyle ':completion:*:kill:*' list-colors \
+   '=(#b) #([0-9]#)*( *[a-z])*=34=31=33'
+
+export HISTFILE=~/.zsh_history
+export HISTSIZE=10000
+export HISTFILESIZE=10000
+export SAVEHIST=10000
+export DIRSTACKSIZE=100
+
 # 標準エディタをvimに設定する
 export EDITOR=vim
-
-# 文字コードを設定する
-export LANG=ja_JP.UTF-8
 
 # 日本語ファイル名を表示可能にする
 setopt print_eight_bit
@@ -244,55 +280,3 @@ ggld () {
 
 ## fzf
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-
-#######################################
-# zplug設定
-source ~/.zplug/init.zsh
-zplug "zsh-users/zsh-history-substring-search"
-zplug "Jxck/dotfiles", as:command, use:"bin/{histuniq,color}"
-zplug "tcnksm/docker-alias", use:zshrc
-zplug "k4rthik/git-cal", as:command, frozen:1
-zplug "junegunn/fzf-bin", \
-    from:gh-r, \
-    as:command, \
-    rename-to:fzf, \
-    use:"*darwin*amd64*"
-zplug "plugins/git",   from:oh-my-zsh
-zplug "lib/clipboard", from:oh-my-zsh, if:"[[ $OSTYPE == *darwin* ]]"
-zstyle ':prezto:module:prompt' theme 'sorin'
-zplug "jhawthorn/fzy", \
-    as:command, \
-    rename-to:fzy, \
-    hook-build:"
-    {
-        make
-        sudo make install
-    } &>/dev/null
-    "
-zplug "b4b4r07/enhancd", at:v1
-zplug "mollifier/anyframe", at:4c23cb60
-zplug "b4b4r07/79ee61f7c140c63d2786", \
-    from:gist, \
-    as:command, \
-    use:get_last_pane_path.sh
-zplug "b4b4r07/hello_bitbucket", \
-    from:bitbucket, \
-    as:command, \
-    hook-build:"chmod 755 *.sh", \
-    use:"*.sh"
-zplug "stedolan/jq", \
-    from:gh-r, \
-    as:command, \
-    rename-to:jq
-zplug "b4b4r07/emoji-cli", \
-    on:"stedolan/jq"
-zplug "zsh-users/zsh-syntax-highlighting", nice:10
-zplug "~/.zsh", from:local
-zplug 'dracula/zsh', as:theme
-if ! zplug check --verbose; then
-    printf "Install? [y/N]: "
-    if read -q; then
-        echo; zplug install
-    fi
-fi
-zplug load --verbose
