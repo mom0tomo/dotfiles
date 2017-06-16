@@ -1,5 +1,6 @@
 # dotfiles
 
+## Usage
 ```
 ln -s ~/dotfiles/.vimrc ~/.vimrc
 ln -s ~/dotfiles/.vimrc ~/.gvimrc
