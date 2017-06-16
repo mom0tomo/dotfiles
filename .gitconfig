@@ -1,6 +1,4 @@
 [core]
-	editor = vim -c \"set fenc=utf-8\"
-	excludesfile = /Users/mo-watanabe/.gitignore_global
 	precomposeunicode = true
 	quotepath = false
 	pager = less -x2
@@ -16,9 +14,6 @@
 
 [push]
 	default = simple
-
-[commit]
-	template = /Users/mo-watanabe/.stCommitMsg
 
 [alias]
 	co = checkout
