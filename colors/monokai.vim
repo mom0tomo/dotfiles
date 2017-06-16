@@ -1,0 +1,1 @@
+/Users/momo/dotfiles/colors/vim-monokai/colors/monokai.vim
