@@ -57,3 +57,27 @@ set nobackup
 set noswapfile
 set autoread
 set hidden
+
+" dein.vim
+if &compatible
+  set nocompatible
+endif
+set runtimepath+=/Users/momo/.cache/dein/repos/github.com/Shougo/dein.vim
+
+if dein#load_state('/Users/momo/.cache/dein')
+  call dein#begin('/Users/momo/.cache/dein')
+	
+	call dein#add('Shougo/dein.vim')
+  call dein#add('Shougo/neocomplete.vim')
+	call dein#add('fatih/vim-go')
+
+  call dein#end()
+  call dein#save_state()
+endif
+
+if dein#check_install()
+  call dein#install()
+endif
+
+filetype plugin indent on
+syntax enable
