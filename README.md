@@ -1,11 +1,7 @@
 # dotfiles
 
-## how to set up
-
 ```
-$ git clone https://github.com/mom0tomo/dotfiles
-
-$ cd dotfiles
-
-$ sh ~/dotfiles/setup.sh
+ln -s ~/dotfiles/.vimrc ~/.vimrc
+ln -s ~/dotfiles/.vimrc ~/.gvimrc
+ln -s ~/dotfiles/.gitconfig ~/.gitconfig
 ```
