@@ -48,6 +48,3 @@ end
 
 # vi mode
 fish_vi_key_bindings
-
-# editor
-alias ij='open -b com.jetbrains.intellij'
