@@ -104,17 +104,39 @@ set clipboard=unnamed
 if &compatible
   set nocompatible
 endif
-set runtimepath+=/Users/momo/.cache/dein/repos/github.com/Shougo/dein.vim
 
-if dein#load_state('/Users/momo/.cache/dein')
-  call dein#begin('/Users/momo/.cache/dein')
-	
-	call dein#add('Shougo/dein.vim')
-  call dein#add('Shougo/neocomplete.vim')
-	call dein#add('fatih/vim-go')
+let s:dein_dir = expand('~/.cache/dein')
+let s:dein_repo_dir = s:dein_dir . '/repos/github.com/Shougo/dein.vim'
+
+if !isdirectory(s:dein_repo_dir)
+  execute '!git clone https://github.com/Shougo/dein.vim' s:dein_repo_dir
+endif
+execute 'set runtimepath^=' . s:dein_repo_dir
+
+if dein#load_state(s:dein_dir)
+  call dein#begin(s:dein_dir)
+
+  let s:toml = '~/dotfiles/.vim/.dein.toml'
+  call dein#load_toml(s:toml, {'lazy': 0})
 
   call dein#end()
   call dein#save_state()
+endif
+
+" dein#load_state('/Users/momo/.cache/dein')
+"  call dein#begin('/Users/momo/.cache/dein')
+ " call dein#add('Shougo/dein.vim')
+  "call dein#add('Shougo/neocomplete.vim')
+  "call dein#add('fatih/vim-go')
+  "call dein#add('scrooloose/nerdtree')
+  "call dein#add('mattn/emmet-vim')
+  "call dein#add('Townk/vim-autoclose')
+  "call dein#end()
+  "call dein#save_state()
+"endif
+
+if dein#check_install(['vimproc'])
+  call dein#install(['vimproc'])
 endif
 
 if dein#check_install()
