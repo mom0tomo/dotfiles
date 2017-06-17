@@ -14,7 +14,6 @@ set cursorline
 set showmatch
 set laststatus=2
 set wrap
-set wildmode=list:longest
 set t_Co=256
 colorscheme monokai
 
