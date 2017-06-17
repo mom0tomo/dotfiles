@@ -24,9 +24,10 @@ set virtualedit=onemore
 
 " indent
 set smartindent
-set tabstop=2
+set noexpandtab
+set tabstop=4
+set shiftwidth=4
 set softtabstop=2
-set shiftwidth=2
 set autoindent
 set smartindent
 set backspace=indent,eol,start
