@@ -91,12 +91,14 @@ call NERDTreeHighlightFile('php', 'Magenta', 'none', '#ff00ff', '#151515')
 call NERDTreeHighlightFile('py',     'yellow',  'none', 'yellow',  '#151515')
 
 " misc
+set wildmode=list:longest
 set virtualedit=onemore
 set ambiwidth=double
 set nobackup
 set noswapfile
 set autoread
 set hidden
+set clipboard=unnamed
 
 " dein.vim
 if &compatible
