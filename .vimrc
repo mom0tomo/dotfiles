@@ -123,18 +123,6 @@ if dein#load_state(s:dein_dir)
   call dein#save_state()
 endif
 
-" dein#load_state('/Users/momo/.cache/dein')
-"  call dein#begin('/Users/momo/.cache/dein')
- " call dein#add('Shougo/dein.vim')
-  "call dein#add('Shougo/neocomplete.vim')
-  "call dein#add('fatih/vim-go')
-  "call dein#add('scrooloose/nerdtree')
-  "call dein#add('mattn/emmet-vim')
-  "call dein#add('Townk/vim-autoclose')
-  "call dein#end()
-  "call dein#save_state()
-"endif
-
 if dein#check_install(['vimproc'])
   call dein#install(['vimproc'])
 endif
