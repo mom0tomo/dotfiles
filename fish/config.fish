@@ -48,3 +48,6 @@ end
 
 # vi mode
 fish_vi_key_bindings
+
+# nvim colorscheme
+TERM=xterm-color256
