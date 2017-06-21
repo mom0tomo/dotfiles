@@ -14,6 +14,7 @@ set cursorline
 set showmatch
 set laststatus=2
 set wrap
+set guifont=Ricty-RegularForPowerline:h11
 set t_Co=256
 colorscheme monokai
 
@@ -98,7 +99,7 @@ set nobackup
 set noswapfile
 set autoread
 set hidden
-set clipboard=unnamed
+set clipboard+=unnamed
 
 " dein.vim
 if &compatible
