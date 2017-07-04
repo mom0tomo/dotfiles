@@ -98,6 +98,7 @@ set ambiwidth=double
 set nobackup
 set noswapfile
 set autoread
+set autowrite
 set hidden
 set clipboard+=unnamed
 
