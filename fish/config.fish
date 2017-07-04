@@ -40,8 +40,6 @@ alias sudo 'sudo'
 
 alias relogin 'source ~/.config/fish/config.fish'
 
-rbenv init - | source
-
 # cd > ls -la
 function cd
   builtin cd $argv
