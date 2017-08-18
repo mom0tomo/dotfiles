@@ -118,7 +118,7 @@ execute 'set runtimepath^=' . s:dein_repo_dir
 if dein#load_state(s:dein_dir)
   call dein#begin(s:dein_dir)
 
-  let s:toml = '~/dotfiles/.vim/.dein.toml'
+  let s:toml = '~/Develop/dotfiles/.vim/dein.toml'
   call dein#load_toml(s:toml, {'lazy': 0})
 
   call dein#end()
