@@ -7,6 +7,9 @@ set -x PATH /usr/local/bin /usr/local/sbin $PATH
 # homebrew
 set -U fish_user_paths /usr/local/bin $fish_user_paths
 
+# go
+set -U fish_user_paths $GOPATH/bin $fish_user_paths
+
 # plugins
 set fish_plugin peco
 
