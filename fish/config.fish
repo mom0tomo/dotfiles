@@ -12,7 +12,7 @@ alias vi 'vim'
 alias la 'ls -la'
 alias ll 'ls -la'
 
-alias rm 'rm -i'
+alias rm 'gomi'
 alias cp 'cp -i'
 alias mv 'mv -i'
 
