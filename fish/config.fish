@@ -4,6 +4,9 @@ set -x LANG ja_JP.UTF-8
 # go
 set PATH $PATH $GOPATH/bin
 
+# rbenv
+rbenv init - | source
+
 # plugins
 set fish_plugin peco
 
