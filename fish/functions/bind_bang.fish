@@ -1,4 +1,4 @@
-# Defined in /Users/mo-watanabe/.config/fish/config.fish @ line 40
+# Defined in /Users/mo-watanabe/.config/fish/config.fish @ line 42
 function bind_bang
 	switch (commandline -t)[-1]
         case "!"

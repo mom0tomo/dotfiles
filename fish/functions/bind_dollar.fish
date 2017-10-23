@@ -1,4 +1,4 @@
-# Defined in /Users/mo-watanabe/.config/fish/config.fish @ line 49
+# Defined in /Users/mo-watanabe/.config/fish/config.fish @ line 51
 function bind_dollar
 	switch (commandline -t)[-1]
         case "!"
