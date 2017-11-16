@@ -24,5 +24,5 @@ $ ln -s $PWD/.gvimrc ~/.gvimrc
 
 ### for neovim
 ```
-$ ln -s $PWD/vim/colors/ ~/.config/
+$ ln -s $PWD/.vim/colors/ ~/.config/
 ```
