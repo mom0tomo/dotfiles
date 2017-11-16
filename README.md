@@ -1,18 +1,28 @@
 # dotfiles
 
 ## Usage
+1. Clone this repo.
 ```
-ln -s ~/dotfiles/.vimrc ~/.vimrc
-ln -s ~/dotfiles/.vimrc ~/.gvimrc
-ln -s ~/dotfiles/.gitconfig ~/.gitconfig
+$ git clone https://github.com/mom0tomo/dotfiles.git
+$ cd dotfiles
+```
 
-ln -s ~/dotfiles/.vim/colors/monokai.vim ~/.vim/colors/monokai.vim
+2. Set symbolic link.
+```
+$ ln -s $PWD/.gitconfig ~/.gitconfig
 
-ln -s ~/dotfiles/fish/config.fish ~/.config/fish/config.fish
-ln -s ~/dotfiles/fish/functions/fish_prompt.fish ~/.config/fish/functions/fish_prompt.fish
+// for fish
+$ ln -s $PWD/fish/ ~/.config/
+
+// for vim
+$ ln -s $PWD/.vimrc ~/.vimrc
+$ ln -s $PWD/.vim/ ~/
+
+// for vim GUI 
+$ ln -s $PWD/.gvimrc ~/.gvimrc
 ```
 
 ### for neovim
 ```
-ln -s ~/dotfiles/colors/monokai.vim ~/.config/colors/monokai.vim
+$ ln -s $PWD/vim/colors/ ~/.config/
 ```
