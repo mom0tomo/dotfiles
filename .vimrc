@@ -50,13 +50,37 @@ nnoremap <silent><Esc><Esc> :<C-u>set nohlsearch!<CR>
 nnoremap j gj
 nnoremap k gk
 nnoremap <down> gj
-nnoremap <up> gk
+"nnoremap <up> gk
+inoremap <C-c> <Esc> 
+noremap <S-h> ^
+noremap <S-l> $
+"for insert mode
+inoremap <C-j>  <down>
+inoremap <C-k>  <up>
+inoremap <C-h>  <left>
+inoremap <C-l>  <right>
+nnoremap == gg=G    
+" !!!!Don't use cursor key!!!!
+noremap  <up>    <nop>
+noremap  <left>  <nop>
+noremap  <right> <nop>
+noremap  <down>  <nop>
+noremap! <up>    <nop>
+noremap! <left>  <nop>
+noremap! <right> <nop>
+noremap! <down>  <nop>
 
 " complement
 set wildmenu
 set history=5000
 set paste
 set wildmode=list:longest
+inoremap { {}<Left>
+inoremap {<Enter> {}<Left><CR><ESC><S-o>
+inoremap ( ()<ESC>i
+inoremap (<Enter> ()<Left><CR><ESC><S-o>
+inoremap ' ''<LEFT>
+inoremap " ""<LEFT>
 
 " golang
 au FileType go nmap gr (go-run)  
