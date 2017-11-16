@@ -4,14 +4,14 @@ set fenc=utf-8
 set fileencodings=ucs-boms,utf-8,euc-jp,cp932
 scriptencoding utf-8
 
-" view
+" view(not for GUI)
 syntax on
 set showcmd
 set title
 set ruler
 set number
+set list
 set cursorline
-set showmatch
 set laststatus=2
 set wrap
 set guifont=Ricty-RegularForPowerline:h11
@@ -37,8 +37,13 @@ set backspace=indent,eol,start
 set incsearch
 set ignorecase
 set smartcase
+
+" edit
 set hlsearch
 set wrapscan
+set backspace=indent,eol,start
+set showmatch
+set wildmenu
 nnoremap <silent><Esc><Esc> :<C-u>set nohlsearch!<CR>
 
 " key
