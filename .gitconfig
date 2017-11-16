@@ -1,20 +1,44 @@
 [core]
 	precomposeunicode = true
 	quotepath = false
-	pager = less -x2
+	# -R: ANSI Color Escape Sequence
+	# -q: quiet. off the bell
+	pager = less -q -R
 
 [user]
-	name = momo
-	email = mo-watanabe@dip-net.co.jp
+	name = mom0tomo
+	email = momo76w@gmail.com
 
 [color]
-	diff = auto
-	status = auto
-	branch = auto
+	ui = auto
+
+[color "diff"]
+    # http://qiita.com/qurage/items/452f2debb64e2708a46c
+    meta = 242 238
+    frag = 239 236
+    old = 167 normal
+    new = 130 normal
+    context = 240
+    commit = 246 024
+
+[diff]
+    tool      = vimdiff
+    algorithm = histogram
+    compactionHeuristic = true
+
+[pager]
+    log  = diff-highlight | less -RX
+    show = diff-highlight | less -RX
+    diff = diff-highlight | less -RX
 
 [push]
 	default = simple
 
+[merge]
+    tool = vimdiff
+
 [alias]
+	st = status
 	co = checkout
 	cm = commit -m
+	graph =  log --graph --date-order --all --pretty=format:'%h %Cred%d %Cgreen%ad %Cblue%cn %Creset%s' --date=short
