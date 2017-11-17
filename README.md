@@ -9,20 +9,26 @@ $ cd dotfiles
 
 2. Set symbolic link.
 ```
-$ ln -s $PWD/.gitconfig ~/.gitconfig
+$ ln -sfv $PWD/.gitconfig ~/.gitconfig
 
 // for fish
-$ ln -s $PWD/fish/ ~/.config/
+$ ln -sfv $PWD/fish/ ~/.config/
 
 // for vim
-$ ln -s $PWD/.vimrc ~/.vimrc
-$ ln -s $PWD/.vim/ ~/
+$ ln -sfv $PWD/.vimrc ~/.vimrc
+$ ln -sfv $PWD/.vim/ ~/
 
 // for vim GUI 
-$ ln -s $PWD/.gvimrc ~/.gvimrc
+$ ln -sfv $PWD/.gvimrc ~/.gvimrc
 ```
 
 ### for neovim
 ```
-$ ln -s $PWD/.vim/colors/ ~/.config/
+$ mkdir ~/.config/nvim/
+
+$ ln -sfv $PWD/.vim/ ~/.config/nvim/
+$ ln -sfv $PWD/.vimrc ~/.config/nvim/init.vim
+
+$ nvim
+:call dein#install()
 ```

@@ -19,3 +19,9 @@ repo = 'mattn/emmet-vim'
 
 [[plugins]]
 repo = 'Townk/vim-autoclose'
+
+[[plugins]]
+repo = 'tomasr/molokai'
+hook_add = '''
+  set background=dark
+  au MyAutoCmd VimEnter * nested colorscheme hybrid
