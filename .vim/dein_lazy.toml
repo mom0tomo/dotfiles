@@ -1,7 +1,41 @@
 [[plugins]]
 repo = 'fatih/vim-go'
-on_ft = ['go']
+on_ft = 'go'
+hook_source = '''
+let g:go_fmt_autosave=1
+let g:go_auto_type_info = 1
+let g:go_highlight_functions = 1
+let g:go_highlight_methods = 1
+let g:go_highlight_fields = 1
+let g:go_highlight_types = 1
+let g:go_highlight_structs=1
+let g:go_highlight_operators = 1
+let g:go_highlight_build_constraints = 1
+let g:go_highlight_extra_types = 1
+let g:go_auto_sameids = 1
+let g:go_fmt_command = 'goimports'
+let g:go_addtags_transform = 'snakecase'
+let g:go_snippet_engine = 'neosnippet'
+let g:go_list_type = 'quickfix'
+let g:syntastic_go_checkers = ['golint', 'govet', 'errcheck', 'go']
+'''
 
 [[plugins]]
 repo = 'mattn/emmet-vim'
-on_ft = ['html']
+on_ft = 'html'
+
+[[plugins]]
+repo = 'vim-ruby/vim-ruby'
+on_ft = 'ruby'
+
+[[plugins]]
+repo = 'mxw/vim-jsx'
+on_ft = 'javascript'
+
+[[plugins]]
+repo = 'hail2u/vim-css3-syntax'
+on_ft = 'css'
+
+[[plugins]]
+repo = 'elzr/vim-json'
+on_ft = 'json'
