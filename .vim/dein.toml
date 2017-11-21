@@ -9,19 +9,7 @@ build = 'make'
 repo = 'Shougo/neosnippet-snippets'
 
 [[plugins]]
-repo = 'fatih/vim-go'
-
-[[plugins]]
-repo = 'scrooloose/nerdtree'
-
-[[plugins]]
-repo = 'mattn/emmet-vim'
-
-[[plugins]]
 repo = 'Townk/vim-autoclose'
 
 [[plugins]]
-repo = 'tomasr/molokai'
-hook_add = '''
-  set background=dark
-  au MyAutoCmd VimEnter * nested colorscheme hybrid
+repo = 'scrooloose/nerdtree'
