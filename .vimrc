@@ -87,8 +87,8 @@ inoremap ' ''<LEFT>
 inoremap " ""<LEFT>
 
 " golang
-au FileType go nmap gr (go-run)  
-au FileType go nmap gt (go-test)  
+au FileType go nmap gr (go-run)
+au FileType go nmap gt (go-test)
 let g:go_hightlight_functions = 1
 let g:go_hightlight_methods = 1
 let g:go_hightlight_structs = 1

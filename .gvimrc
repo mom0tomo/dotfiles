@@ -11,4 +11,4 @@ set nomousefocus
 set mousehide
 " fonts
 set guifont=VL_Gothic:h16
-set linespace=0 
+set linespace=0
