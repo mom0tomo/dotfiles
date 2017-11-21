@@ -160,4 +160,4 @@ endif
 filetype plugin indent on
 syntax enable
 
-" colorscheme molokai
+" colorscheme monokai
