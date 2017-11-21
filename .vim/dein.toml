@@ -41,3 +41,5 @@ call NERDTreeHighlightFile('py',     'yellow',  'none', 'yellow',  '#151515')
 [[plugins]]
 repo = 'Townk/vim-autoclose'
 
+[[plugins]]
+repo = 'bronson/vim-trailing-whitespace'
