@@ -26,9 +26,6 @@ $ ln -sfv $PWD/.gvimrc ~/.gvimrc
 ```
 $ mkdir ~/.config/nvim/
 
-$ ln -sfv $PWD/.vim/ ~/.config/nvim/
+$ ln -sfv $PWD/.vim/colors ~/.config/nvim/
 $ ln -sfv $PWD/.vimrc ~/.config/nvim/init.vim
-
-$ nvim
-:call dein#install()
 ```
