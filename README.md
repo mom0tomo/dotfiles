@@ -18,14 +18,16 @@ $ ln -sfv $PWD/fish/ ~/.config/
 $ ln -sfv $PWD/.vimrc ~/.vimrc
 $ ln -sfv $PWD/.vim/ ~/
 
-// for vim GUI 
+// for vim GUI
 $ ln -sfv $PWD/.gvimrc ~/.gvimrc
 ```
 
 ### for neovim
 ```
-$ mkdir ~/.config/nvim/
+$ mkdir ~/.config/nvim/dein
+$ curl https://raw.githubusercontent.com/Shougo/dein.vim/master/bin/installer.sh > installer.sh
+$ sh ./installer.sh ~/.config/nvim/dein
 
 $ ln -sfv $PWD/.vim/colors ~/.config/nvim/
-$ ln -sfv $PWD/.vimrc ~/.config/nvim/init.vim
+$ ln -sfv $PWD/nvim/init.vim ~/.config/nvim/init.vim
 ```
