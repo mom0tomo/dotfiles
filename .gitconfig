@@ -12,24 +12,10 @@
 [color]
 	ui = auto
 
-[color "diff"]
-    # http://qiita.com/qurage/items/452f2debb64e2708a46c
-    meta = 242 238
-    frag = 239 236
-    old = 167 normal
-    new = 130 normal
-    context = 240
-    commit = 246 024
-
 [diff]
     tool      = vimdiff
     algorithm = histogram
     compactionHeuristic = true
-
-[pager]
-    log  = diff-highlight | less -RX
-    show = diff-highlight | less -RX
-    diff = diff-highlight | less -RX
 
 [push]
 	default = simple
