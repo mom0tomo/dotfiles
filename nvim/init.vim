@@ -1,7 +1,3 @@
-" for view
-set number
-set cursorline
-
 " for dein.vim
 let s:dein_dir = expand('~/.vim/dein')
 let s:dein_repo_dir = s:dein_dir . '/repos/github.com/Shougo/dein.vim'
@@ -30,6 +26,10 @@ endif
 if dein#check_install()
   call dein#install()
 endif
+
+" for view
+set number
+set cursorline
 
 " color scheme
 syntax on
