@@ -1,0 +1,1 @@
+/Users/200491/.config/fisherman/z/functions/__z_add.fish
