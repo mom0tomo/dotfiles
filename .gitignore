@@ -46,3 +46,6 @@ tags
 ### fish ###
 # swap
 fish/fishd*
+
+### dein ###
+vim/.vim/dein
