@@ -11,3 +11,8 @@ $ cd dotfiles
 ```
 $ sh install.sh
 ```
+
+3. for fisherman
+```
+$ fisher up
+```
