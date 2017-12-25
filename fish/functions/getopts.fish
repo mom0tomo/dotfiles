@@ -1,1 +1,1 @@
-/Users/200491/.config/fisherman/getopts/getopts.fish
+/Users/mom0tomo/.config/fisherman/getopts/getopts.fish

@@ -1,1 +1,1 @@
-/Users/200491/.config/fisherman/bd/functions/bd.fish
+/Users/mom0tomo/.config/fisherman/bd/functions/bd.fish
