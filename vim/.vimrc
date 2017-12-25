@@ -52,3 +52,5 @@ set clipboard=unnamed " clipboardを共有する
 inoremap jj <Esc> 
 " 入力モード中に素早くjjと入力した場合はESCとみなす
 
+" nerdtree
+nnoremap <silent><C-e> :NERDTreeToggle<CR>
