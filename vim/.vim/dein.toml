@@ -41,5 +41,33 @@ call NERDTreeHighlightFile('py',     'yellow',  'none', 'yellow',  '#151515')
 [[plugins]]
 repo = 'Townk/vim-autoclose'
 
+# 空白をハイライトする
 [[plugins]]
 repo = 'bronson/vim-trailing-whitespace'
+
+# インデントを可視化する
+[[plugins]]
+repo = 'Yggdroot/indentLine'
+
+# j, k移動高速化
+[[plugins]]
+repo = 'rhysd/accelerated-jk'
+
+# /検索強化
+[[plugins]]
+repo = 'osyo-manga/vim-anzu'
+hook_siource = '''
+nmap j <Plug>(accelerated_jk_gj)
+nmap k <Plug>(accelerated_jk_gk)
+'''
+
+# /検索強化
+[[plugins]]
+repo = 'osyo-manga/vim-anzu'
+hook_source = '''
+nmap n nzz<Plug>(anzu-update-search-status)
+nmap N Nzz<Plug>(anzu-update-search-status)
+nmap * <Plug>(anzu-star)
+nmap # <Plug>(anzu-sharp)
+nmap <silent> <ESC><ESC> :<C-u>nohlsearch<CR><Plug>(anzu-clear-search-status)
+'''

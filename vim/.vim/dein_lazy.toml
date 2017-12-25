@@ -68,3 +68,29 @@ on_ft = 'json'
 [[plugins]]
 repo = 'cespare/vim-toml'
 on_ft = 'toml'
+
+[[plugins]]
+repo = 'slim-template/vim-slim'
+on_ft = ['slim']
+
+# Rubyの自動補完
+[[plugins]]
+repo = 'Shougo/deoplete-rct'
+on_ft = ['ruby']
+
+# Rubyの自動補完
+[[plugins]]
+repo = 'fishbullet/deoplete-ruby'
+on_ft = ['ruby']
+
+# Rubyのend補完
+[[plugins]]
+repo = 'tpope/vim-endwise'
+on_i = 1
+on_ft = ['ruby']
+
+# Rubyのメソッドの定義元にジャンプ
+[[plugins]]
+repo = 'szw/vim-tags'
+
+
