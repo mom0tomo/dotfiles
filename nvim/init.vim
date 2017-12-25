@@ -27,10 +27,19 @@ if dein#check_install()
   call dein#install()
 endif
 
-" for view
-set number
-set cursorline
-
 " color scheme
 syntax on
 colorscheme monokai
+
+" settings
+set number
+set cursorline
+set list " 不可視文字を表示
+set listchars=tab:>-,trail:-,nbsp:%,extends:>,precedes:<,eol:¬ " 不可視文字の表示をカスタマイズ
+set hlsearch " 検索結果をハイライト
+set incsearch " 検索文字を入れるたびに検索する"
+set shiftwidth=2
+set smartindent
+set noswapfile
+set backup
+set backupdir=/tmp
