@@ -11,8 +11,8 @@ rbenv init - | source
 set fish_plugin peco
 
 # alias
-alias vi 'nvim'
-alias vim 'nvim'
+alias vi 'vim'
+alias vim 'vim'
 alias la 'ls -la'
 alias ll 'ls -la'
 alias cp 'cp -i'
