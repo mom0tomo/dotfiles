@@ -1,0 +1,3 @@
+\set PROMPT1 '%[%033[1;33;40m%]psql[%/]%[%033[0m%]\n%# '
+\timing
+\pset null (NULL)
