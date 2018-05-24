@@ -4,6 +4,7 @@
 	# -R: ANSI Color Escape Sequence
 	# -q: quiet. off the bell
 	pager = less -q -R
+	excludesfile = $HOME/.gitignore_global
 
 [user]
 	name = mom0tomo
