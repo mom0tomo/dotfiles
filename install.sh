@@ -8,6 +8,7 @@ fish_home=/.config/fish
 # for git
 ln -sf $PWD/git/.gitconfig ~/.gitconfig
 ln -sf $PWD/git/.gitignore ~/.gitignore
+ln -sf $PWD/git/.gitignore_global ~/.gitignore_global
 
 # for fish
 ln -sf $PWD/fish/ ${fish_home}
@@ -27,3 +28,6 @@ mkdir -p ~/.cache/dein
 curl https://raw.githubusercontent.com/Shougo/dein.vim/master/bin/installer.sh > installer.sh
 sh ./installer.sh ~/.cache/dein
 rm ./installer.sh
+
+# for psql
+ln -sf $PWD/psql/.psqlrc ~/.psqlrc
