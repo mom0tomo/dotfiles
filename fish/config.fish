@@ -4,9 +4,6 @@ set -x LANG ja_JP.UTF-8
 # go
 set PATH $PATH $GOPATH/bin
 
-# anyenv
-set -x PATH $HOME/.anyenv/bin $PATH
-
 # ndenv
 set -x NDENV_ROOT $HOME/.anyenv/envs/ndenv
 set -x PATH $HOME/.anyenv/envs/ndenv/bin $PATH
