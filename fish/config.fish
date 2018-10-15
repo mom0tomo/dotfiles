@@ -2,22 +2,20 @@
 set -x LANG ja_JP.UTF-8
 
 # go
-set PATH $PATH $GOPATH/bin
+set -x GOPATH /Users/mom0tomo/dev/go
+set -x PATH $GOPATH/bin $PATH
+
+# google cloud SDK
+set -x PATH ~/dev/google-cloud-sdk/bin $PATH
+
+#app engine Go
+set -x PATH ~/dev/go_appengine/ $PATH
 
 # ndenv
-set -x NDENV_ROOT $HOME/.anyenv/envs/ndenv
-set -x PATH $HOME/.anyenv/envs/ndenv/bin $PATH
 set -x PATH $NDENV_ROOT/shims $PATH
 
 # rbenv
 rbenv init - | source
-
-# GAE
-set -x PATH $HOME/dev/go/go_appengine $PATH
-
-# embulk
-set -x PATH $HOME/.embulk/bin $PATH
-alias embulk 'java -jar $HOME/.embulk/bin/embulk'
 
 # plugins
 set fish_plugin peco
@@ -33,7 +31,6 @@ alias mkdir 'mkdir -p'
 alias rm 'rm -rf'
 alias relogin 'source ~/.config/fish/config.fish'
 alias it '~/bin/iterm-setting'
-alias rails 'bin/rails'
 
 # Fish git prompt
 set __fish_git_prompt_showdirtystate 'yes'
