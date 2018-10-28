@@ -22,13 +22,10 @@ set fish_plugin peco
 
 # alias
 alias vi 'vim'
-alias vim 'vim'
-alias la 'ls -la'
 alias ll 'ls -la'
 alias cp 'cp -i'
 alias mv 'mv -i'
 alias mkdir 'mkdir -p'
-alias rm 'rm -rf'
 alias relogin 'source ~/.config/fish/config.fish'
 alias it '~/bin/iterm-setting'
 
