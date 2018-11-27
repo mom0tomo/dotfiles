@@ -11,11 +11,11 @@ set -x PATH ~/dev/google-cloud-sdk/bin $PATH
 #app engine Go
 set -x PATH ~/dev/go_appengine/ $PATH
 
-# ndenv
-set -x PATH $NDENV_ROOT/shims $PATH
-
 # rbenv
 rbenv init - | source
+
+# nodebrew
+set -U fish_user_paths $fish_user_paths $HOME/.nodebrew/current/bin
 
 # plugins
 set fish_plugin peco
