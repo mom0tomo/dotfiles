@@ -2,20 +2,25 @@
 set -x LANG ja_JP.UTF-8
 
 # go
-set -x GOPATH /Users/mom0tomo/dev/go
+set -x GOPATH $HOME/dev/go
 set -x PATH $GOPATH/bin $PATH
 
 # google cloud SDK
-set -x PATH ~/dev/google-cloud-sdk/bin $PATH
+set -x PATH $HOME/dev/google-cloud-sdk/bin $PATH
 
 #app engine Go
-set -x PATH ~/dev/go_appengine/ $PATH
+set -x PATH $HOME/dev/go_appengine/ $PATH
+
+# anyenv
+set -x PATH $HOME/.anyenv/bin $PATH
+
+# ndenv
+set -x NDENV_ROOT $HOME/.anyenv/envs/ndenv
+set -x PATH $HOME/.anyenv/envs/ndenv/bin $PATH
+set -x PATH $NDENV_ROOT/shims $PATH
 
 # rbenv
 rbenv init - | source
-
-# nodebrew
-set -U fish_user_paths $fish_user_paths $HOME/.nodebrew/current/bin
 
 # plugins
 set fish_plugin peco
