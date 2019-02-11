@@ -11,6 +11,10 @@ set -x PATH $HOME/dev/google-cloud-sdk/bin $PATH
 #app engine Go
 set -x PATH $HOME/dev/go_appengine/ $PATH
 
+# direnv
+set -x EDITOR vim
+eval (direnv hook fish)
+
 # anyenv
 set -x PATH $HOME/.anyenv/bin $PATH
 
