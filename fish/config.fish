@@ -8,7 +8,7 @@ set -x PATH $GOPATH/bin $PATH
 # google cloud SDK
 set -x PATH $HOME/dev/google-cloud-sdk/bin $PATH
 
-#app engine Go
+# app engine Go
 set -x PATH $HOME/dev/go_appengine/ $PATH
 
 # direnv
@@ -25,6 +25,9 @@ set -x PATH $NDENV_ROOT/shims $PATH
 
 # rbenv
 rbenv init - | source
+
+# webpack
+set -x PATH $PATH:./node_modules/.bin
 
 # plugins
 set fish_plugin peco
