@@ -13,6 +13,10 @@ set -x PATH $HOME/dev/google-cloud-sdk/bin $PATH
 set -x CGO_LDFLAGS '-L/usr/local/Cellar/mecab/0.996/lib -lmecab -lstdc++'
 set -x CGO_CFLAGS '-I/usr/local/Cellar/mecab/0.996/include'
 
+# direnv
+set -x EDITOR vim
+eval (direnv hook fish)
+
 # anyenv
 set -x PATH $HOME/.anyenv/bin $PATH
 
@@ -23,6 +27,9 @@ set -x PATH $NDENV_ROOT/shims $PATH
 
 # rbenv
 rbenv init - | source
+
+# webpack
+set -x PATH $PATH:./node_modules/.bin
 
 # plugins
 set fish_plugin peco
