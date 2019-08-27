@@ -15,14 +15,6 @@ set -x PATH $HOME/dev/go_appengine/ $PATH
 set -x EDITOR vim
 eval (direnv hook fish)
 
-# anyenv
-set -x PATH $HOME/.anyenv/bin $PATH
-
-# ndenv
-set -x NDENV_ROOT $HOME/.anyenv/envs/ndenv
-set -x PATH $HOME/.anyenv/envs/ndenv/bin $PATH
-set -x PATH $NDENV_ROOT/shims $PATH
-
 # rbenv
 rbenv init - | source
 
