@@ -20,6 +20,9 @@ eval (direnv hook fish)
 # rbenv
 rbenv init - | source
 
+# nodenv
+status --is-interactive; and source (nodenv init -|psub)
+
 # webpack
 set -x PATH $PATH:./node_modules/.bin
 
