@@ -4,12 +4,14 @@ set -x LANG ja_JP.UTF-8
 # go
 set -x GOPATH $HOME/dev/go
 set -x PATH $GOPATH/bin $PATH
+set -x GO111MODULE on
 
 # google cloud SDK
 set -x PATH $HOME/dev/google-cloud-sdk/bin $PATH
 
-# app engine Go
-set -x PATH $HOME/dev/go_appengine/ $PATH
+# mecab-golang
+set -x CGO_LDFLAGS '-L/usr/local/Cellar/mecab/0.996/lib -lmecab -lstdc++'
+set -x CGO_CFLAGS '-I/usr/local/Cellar/mecab/0.996/include'
 
 # direnv
 set -x EDITOR vim
