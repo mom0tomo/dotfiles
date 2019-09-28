@@ -4,7 +4,6 @@ set -x LANG ja_JP.UTF-8
 # go
 set -x GOPATH $HOME/dev/go
 set -x PATH $GOPATH/bin $PATH
-set -x GO111MODULE on
 
 # google cloud SDK
 set -x PATH $HOME/dev/google-cloud-sdk/bin $PATH
