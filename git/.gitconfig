@@ -14,19 +14,20 @@
 	ui = auto
 
 [diff]
-    tool      = vimdiff
-    algorithm = histogram
-    compactionHeuristic = true
+	tool      = vimdiff
+	algorithm = histogram
+	compactionHeuristic = true
 
 [push]
 	default = simple
 
 [merge]
-    tool = vimdiff
+	tool = vimdiff
 
 [alias]
 	st = status
-	co = checkout
+	sw = switch
+	re = restore
 	cm = commit -m
 	graph =  log --graph --date-order --all --pretty=format:'%h %Cred%d %Cgreen%ad %Cblue%cn %Creset%s' --date=short
-  delete-merged-branch = "!f () { git branch --merged | egrep -v '\\*|master|develop' | xargs git branch -d; }; f"
+	delete-merged-branch = "!f () { git branch --merged | egrep -v '\\*|master|develop' | xargs git branch -d; }; f"
