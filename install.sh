@@ -11,7 +11,7 @@ ln -sf $PWD/git/.gitignore ~/.gitignore
 ln -sf $PWD/git/.gitignore_global ~/.gitignore_global
 
 # for fish
-ln -sf $PWD/fish/ ${fish_home}
+sudo ln -sf $PWD/fish/ ${fish_home}
 
 # for vim
 ln -sf $PWD/vim/.vimrc ~/.vimrc
@@ -19,9 +19,9 @@ ln -sf $PWD/vim/.gvimrc ~/.gvimrc
 ln -sf $PWD/vim/.vim/ ${vim_home} 
 
 # for neovim
-mkdir -p ${nvim_home} 
-ln -sf $PWD/nvim/init.vim ${nvim_home}
-ln -sf $PWD/nvim/colors ${nvim_home}
+sudo mkdir -p ${nvim_home} 
+sudo ln -sf $PWD/nvim/init.vim ${nvim_home}
+sudo ln -sf $PWD/nvim/colors ${nvim_home}
 
 # for dein.vim
 mkdir -p ~/.cache/dein
