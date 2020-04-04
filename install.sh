@@ -1,7 +1,7 @@
 #!/bin/sh
 cd $(dirname ${0})
 
-vim_home=~/.vim
+vim_home=~/
 nvim_home=~/.config
 fish_home=/.config
 
