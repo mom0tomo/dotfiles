@@ -2,8 +2,8 @@
 cd $(dirname ${0})
 
 vim_home=~/
-nvim_home=~/.config
-fish_home=/.config
+nvim_home=~/.config/
+fish_home=~/.config/
 
 # for git
 ln -sf $PWD/git/.gitconfig ~/.gitconfig
