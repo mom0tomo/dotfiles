@@ -29,6 +29,7 @@
 	sw = switch
 	re = restore
 	cm = commit -m
+  pushf = push --force-with-lease
 	graph =  log --graph --date-order --all --pretty=format:'%h %Cred%d %Cgreen%ad %Cblue%cn %Creset%s' --date=short
 	delete-merged-branch = "!f () { git branch --merged | egrep -v '\\*|master|develop' | xargs git branch -d; }; f"
 [filter "lfs"]
