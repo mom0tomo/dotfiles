@@ -1,16 +1,16 @@
 # encoding
 set -x LANG ja_JP.UTF-8
 
-# go
+# Go
 set -x GOPATH $HOME/dev/go
 set -x PATH $GOPATH/bin $PATH
 
 # google cloud SDK
 set -x PATH $HOME/dev/google-cloud-sdk/bin $PATH
 
-# mecab-golang
-set -x CGO_LDFLAGS '-L/usr/local/Cellar/mecab/0.996/lib -lmecab -lstdc++'
-set -x CGO_CFLAGS '-I/usr/local/Cellar/mecab/0.996/include'
+# anyenv
+set -x PATH $HOME/.anyenv/bin $PATH
+status --is-interactive; and anyenv init - fish | source
 
 # direnv
 set -x EDITOR vim
