@@ -17,13 +17,14 @@ set -x EDITOR vim
 eval (direnv hook fish)
 
 # rbenv
-rbenv init - | source
+set -x PATH ~/.rbenv/shims:/usr/local/bin:/usr/bin:/bin $PATH
+status --is-interactive; and rbenv init - fish | source
 
 # nodenv
 status --is-interactive; and source (nodenv init -|psub)
 
-# webpack
-set -x PATH $PATH:./node_modules/.bin
+# pyenv
+pyenv init - | source
 
 # plugins
 set fish_plugin peco
