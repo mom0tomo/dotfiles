@@ -31,7 +31,10 @@
 	cm = commit -m
   pushf = push --force-with-lease
 	graph =  log --graph --date-order --all --pretty=format:'%h %Cred%d %Cgreen%ad %Cblue%cn %Creset%s' --date=short
-	delete-merged-branch = "!f () { git branch --merged | egrep -v '\\*|master|develop' | xargs git branch -d; }; f"
+	dmb = "!f () { git branch --merged | egrep -v '\\*|master|develop' | xargs git branch -d; }; f"
+  r = "!f() { git reflog -n 50 --pretty='format:%gs' | perl -anal -e '$seen{$1}++ or print $1 if /checkout:.*to (.+)/'; }; f"
+  sha = "!f() { git rev-parse "${1-HEAD}"; }; f"
+  fixit = commit --amend --no-edit
 [filter "lfs"]
 	clean = git-lfs clean -- %f
 	smudge = git-lfs smudge -- %f
