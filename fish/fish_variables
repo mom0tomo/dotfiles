@@ -4,10 +4,16 @@ SETUVAR ZO_CMD:zo
 SETUVAR Z_CMD:z
 SETUVAR Z_DATA:/Users/mom0tomo/\x2elocal/share/z/data
 SETUVAR Z_DATA_DIR:/Users/mom0tomo/\x2elocal/share/z
-SETUVAR Z_EXCLUDE:/Users/mom0tomo
+SETUVAR Z_EXCLUDE:\x5e/Users/mom0tomo\x24
 SETUVAR __fish_init_2_3_0:\x1d
 SETUVAR __fish_init_3_x:\x1d
 SETUVAR __fish_initialized:3100
+SETUVAR _fisher_0rax_2F_fish_2D_bd_files:/Users/mom0tomo/\x2econfig/fish/functions/bd\x2efish\x1e/Users/mom0tomo/\x2econfig/fish/completions/bd\x2efish
+SETUVAR _fisher_edc_2F_bass_files:/Users/mom0tomo/\x2econfig/fish/functions/__bass\x2epy\x1e/Users/mom0tomo/\x2econfig/fish/functions/bass\x2efish
+SETUVAR _fisher_jethrokuan_2F_z_files:/Users/mom0tomo/\x2econfig/fish/functions/__z\x2efish\x1e/Users/mom0tomo/\x2econfig/fish/functions/__z_add\x2efish\x1e/Users/mom0tomo/\x2econfig/fish/functions/__z_clean\x2efish\x1e/Users/mom0tomo/\x2econfig/fish/functions/__z_complete\x2efish\x1e/Users/mom0tomo/\x2econfig/fish/conf\x2ed/z\x2efish
+SETUVAR _fisher_jorgebucaran_2F_fisher_files:/Users/mom0tomo/\x2econfig/fish/functions/fisher\x2efish\x1e/Users/mom0tomo/\x2econfig/fish/completions/fisher\x2efish
+SETUVAR _fisher_oh_2D_my_2D_fish_2F_plugin_2D_peco_files:/Users/mom0tomo/\x2econfig/fish/functions/peco_kill\x2efish\x1e/Users/mom0tomo/\x2econfig/fish/functions/peco_select_history\x2efish
+SETUVAR _fisher_plugins:edc/bass\x1e0rax/fish\x2dbd\x1eoh\x2dmy\x2dfish/plugin\x2dpeco\x1ejethrokuan/z\x1ejorgebucaran/fisher
 SETUVAR fish_color_autosuggestion:555\x1ebrblack
 SETUVAR fish_color_cancel:\x2dr
 SETUVAR fish_color_command:005fd7
