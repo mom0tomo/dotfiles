@@ -49,3 +49,6 @@ fish/fishd*
 
 ### dein ###
 vim/.vim/dein
+
+### sensitive data ###
+.config.fish.local
