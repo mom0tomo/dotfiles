@@ -44,6 +44,7 @@ tags
 # End of https://www.gitignore.io/api/vim,macos
 
 ### fish ###
+fish/fish_variables
 # swap
 fish/fishd*
 
