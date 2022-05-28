@@ -31,12 +31,9 @@ set fish_plugin peco
 
 # alias
 alias vi 'vim'
-alias ll 'ls -la'
 alias cp 'cp -i'
 alias mv 'mv -i'
-alias mkdir 'mkdir -p'
 alias relogin 'source ~/.config/fish/config.fish'
-alias it '~/bin/iterm-setting'
 
 # Fish git prompt
 set __fish_git_prompt_showdirtystate 'yes'
