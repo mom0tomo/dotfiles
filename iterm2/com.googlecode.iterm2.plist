@@ -229,12 +229,16 @@
 			<false/>
 			<key>Foreground Color</key>
 			<dict>
+				<key>Alpha Component</key>
+				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.73333334922790527</real>
+				<real>0.7803921568627451</real>
+				<key>Color Space</key>
+				<string>sRGB</string>
 				<key>Green Component</key>
-				<real>0.73333334922790527</real>
+				<real>0.7803921568627451</real>
 				<key>Red Component</key>
-				<real>0.73333334922790527</real>
+				<real>0.7803921568627451</real>
 			</dict>
 			<key>Guid</key>
 			<string>80D6D07A-4DCB-49C7-8705-3E4E44D49A0F</string>
