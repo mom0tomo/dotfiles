@@ -57,5 +57,3 @@ set __fish_git_prompt_char_upstream_behind '-'
 # The next line updates PATH for the Google Cloud SDK.
 if [ -f '/Users/mom0tomo/dev/go/google-cloud-sdk/path.fish.inc' ]; if type source > /dev/null; source '/Users/mom0tomo/dev/go/google-cloud-sdk/path.fish.inc'; else; . '/Users/mom0tomo/dev/go/google-cloud-sdk/path.fish.inc'; end; end
 
-# pyenv
-pyenv init - | source
