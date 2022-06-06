@@ -13,6 +13,8 @@ $ sh install.sh
 ```
 
 3. for fisherman
+install https://github.com/jorgebucaran/fisher
 ```
-$ fisher up
+$ fisher update
 ```
+
