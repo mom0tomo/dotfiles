@@ -35,7 +35,10 @@ alias cp 'cp -i'
 alias mv 'mv -i'
 alias relogin 'source ~/.config/fish/config.fish'
 ## Hack for warn in "brew doctor" when installing anyenv
-alias brew="PATH=/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin command brew $argv"
+### for Intel
+#alias brew="PATH=/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin command brew $argv"
+### for ARM
+alias brew="PATH=$PATH/\/Users\/$USER\/\.anyenv\/envs\/pyenv\/shims:/ command brew $argv"
 
 # Fish git prompt
 set __fish_git_prompt_showdirtystate 'yes'
