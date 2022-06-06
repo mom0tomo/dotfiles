@@ -1,6 +1,9 @@
 # encoding
 set -x LANG ja_JP.UTF-8
 
+# Homwbewq
+set -x PATH $PATH /opt/homebrew/bin
+
 # Go
 set -x GOPATH $HOME/dev/go
 set -x PATH $GOPATH/bin $PATH
