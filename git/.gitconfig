@@ -5,25 +5,19 @@
 	# -q: quiet. off the bell
 	pager = less -q -R
 	excludesfile = $HOME/.gitignore_global
-
 [user]
 	name = mom0tomo
 	email = momo76w@gmail.com
-
 [color]
 	ui = auto
-
 [diff]
 	tool      = vimdiff
 	algorithm = histogram
 	compactionHeuristic = true
-
 [push]
 	default = simple
-
 [merge]
 	tool = vimdiff
-
 [alias]
 	st = status
 	sw = switch
