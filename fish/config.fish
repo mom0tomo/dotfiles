@@ -43,6 +43,13 @@ alias relogin 'source ~/.config/fish/config.fish'
 ### for ARM
 alias brew="PATH=$PATH/\/Users\/$USER\/\.anyenv\/envs\/pyenv\/shims:/ command brew $argv"
 
+# GitHub Actions
+# set WORKFLOW ''
+alias gh-run='gh workflow run .github/workflows/$WORKFLOW --ref $(git branch --show-current)'
+alias gh-watch='gh run list --workflow=$WORKFLOW | grep $(git branch --show-current) | cut -f 7 | head -n 1 | xargs gh run watch'
+alias gh-view='gh run list --workflow=$WORKFLOW | grep $(git branch --show-current) | cut -f 7 | head -n 1 | xargs gh run view'
+alias gh-log='gh run list --workflow=$WORKFLOW | grep $(git branch --show-current) | cut -f 7 | head -n 1 | xargs gh run view --log'
+
 # Fish git prompt
 set __fish_git_prompt_showdirtystate 'yes'
 set __fish_git_prompt_showstashstate 'yes'
