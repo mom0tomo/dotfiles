@@ -2,7 +2,7 @@
 set -x LANG ja_JP.UTF-8
 
 # Homwbrew
-set -x PATH $PATH /opt/homebrew/bin
+set PATH /opt/homebrew/bin $PATH
 
 # Go
 set -x GOPATH $HOME/dev/go
