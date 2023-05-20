@@ -5,7 +5,7 @@
 	<key>AlternateMouseScroll</key>
 	<true/>
 	<key>Command</key>
-	<string></string>
+	<string>/opt/homebrew/bin/fish</string>
 	<key>Default Bookmark Guid</key>
 	<string>80D6D07A-4DCB-49C7-8705-3E4E44D49A0F</string>
 	<key>HapticFeedbackForEsc</key>
