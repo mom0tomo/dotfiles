@@ -31,3 +31,6 @@ rm ./installer.sh
 
 # for psql
 ln -sf $PWD/psql/.psqlrc ~/.psqlrc
+
+# for karabiner
+ln -sf $PWD/karabiner/karabiner.json ~/.config/karabiner/karabiner.json
